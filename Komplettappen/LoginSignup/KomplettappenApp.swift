@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct KomplettappenApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+//    för Firebase
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoListView()
         }
     }
 }
